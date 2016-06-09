@@ -226,7 +226,7 @@ function create_config( )
     "id",
     "admin"
     },
-    sudo_users = {85831686},--Sudo users
+    sudo_users = {172178919,},--Sudo users
     disabled_channels = {},
     moderation = {data = 'data/moderation.json'},
     about_text = [[spammer-bot
