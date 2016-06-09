@@ -296,73 +296,101 @@ This command will send text to [group_id]
 » Only owner can use res,setowner,promote,demote and log commands
 ]],
     help_text = [[
-Commands list :
-!kick [username|id]
-You can also do it by reply
-!ban [ username|id]
-You can also do it by reply
-!unban [id]
-You can also do it by reply
-!who
-Members list
-!modlist
-Moderators list
-!promote [username]
-Promote someone
-!demote [username]
-Demote someone
-!kickme
-Will kick user
-!about
-Group description
-!setphoto
-Set and locks group photo
-!setname [name]
-Set group name
-!rules
-Group rules
-!id
-Return group id or user id
-!help
-Get commands list
-!lock [member|name|bots|leave] 
-Locks [member|name|bots|leaveing] 
-!unlock [member|name|bots|leave]
-Unlocks [member|name|bots|leaving]
-!set rules [text]
-Set [text] as rules
-!set about [text]
-Set [text] as about
-!settings
-Returns group settings
-!newlink
-Create/revoke your group link
-!link
-Returns group link
+⭕️دستورات فارسی ربات:
+___________________
+!info
+🔰اطلاعات خود🔰
+!admins
+🔰لیست ادمین های سوپر گروه🔰
+!setadmin
+🔰تنظیم ادمین سوپر گروه🔰
 !owner
-Returns group owner id
-!setowner [id]
-Will set id as owner
-!setflood [value]
-Set [value] as flood sensitivity
-!stats
-Simple message statistics
-!save [value] [text]
-Save [text] as [value]
+🔰مالک سوپر گروه🔰
+!setowner
+🔰تنظیم مالک سوپر گروه🔰
+!modlist
+🔰لیست مدیران🔰
+!bots
+🔰لیست ربات ها در سوپر گروه🔰
+!block
+🔰اخراج شخص از سوپر گروه🔰
+(ورود شخص به لیست مسدودان)
+!ban [id|username|reply]
+🔰مسدود کردن شخص از سوپر گروه🔰
+!unban [id|username|reply]
+🔰حذف مسدودی شخص از سوپر گروه🔰
+!id
+🔰ایدی سوپر گروه (و ایدی شخص با ریپلی)🔰
+!id from
+🔰ایدی شخص فوروارد کننده پیام🔰
+!kickme
+🔰خروج از سوپر گروه🔰
+!promote [username|id]
+🔰ارتقاع کاربر به مدیر سوپر گروه🔰
+!demote [username|id]
+🔰حذف مدیر سوپر گروه🔰
+!setname [name]
+🔰تنظیم نام گروه🔰
+!setphoto 
+🔰تنظیم عکس گروه🔰
+!setrules [rules]
+🔰تنظیم قوانین گروه🔰
+!setabout [about]
+🔰تنظیم موضوع گروه🔰
+!save [value] <text>
+🔰یادداشت متن های گروه🔰
 !get [value]
-Returns text of [value]
-!clean [modlist|rules|about]
-Will clear [modlist|rules|about] and set it to nil
+🔰مشاهده یک متن گروه🔰
+!newlink
+🔰ساخت لینک جدید🔰
+!link
+🔰لینک فعلی گروه🔰
+!linkpv
+🔰فرستادن لینک سوپر گروه در پیوی🔰
+!rules
+🔰قوانین گر‌وه🔰
+!lock [links|flood|spam|arabic|member|rtl|sticker|contacts|strict|tgservice|forward]
+🔰قفل موارد بالا🔰
+!unlock [links|flood|spam|arabic|member|rtl|sticker|contacts|strict|tgservice|forward]
+🔰باز کردن موارد بالا🔰
+!mute [all|audio|gifs|photo|video|text|service]
+🔰موت موارد بالا🔰
+!unmute [all|audio|gifs|photo|video|text|service]
+🔰لغو موت موارد بالا🔰
+!setflood [value]
+🔰تنظیم اندازه حساسیت اسپم🔰
+!settings
+🔰تنظیمات سوپر گروه🔰
+!muteslist
+🔰لیست موت های سوپر گروه🔰
+!muteuser [username|id]
+🔰موت و باز کردن موت شخصی🔰
+!mutelist
+🔰لیست کاربران موت شده🔰
+!banlist 
+🔰لیست مسدودان🔰
+!clean [rules|about|modlist|mutelist]
+🔰پاک کردن موارد بالا🔰
+!del 
+🔰پاک کردن یک پیام با ریپلی🔰
+!public [yes|no]
+🔰خصوصی و عمومی کردن سوپر گروه🔰
 !res [username]
-Returns user id
+🔰ایدی شخص با یوزرنیم🔰
 !log
-Will return group logs
-!banlist
-Will return group ban list
-» U can use both "/" and "!" 
-» Only mods, owner and admin can add bots in group
-» Only moderators and owner can use kick,ban,unban,newlink,link,setphoto,setname,lock,unlock,set rules,set about and settings commands
-» Only owner can use res,setowner,promote,demote and log commands
+🔰لوگ سوپر گروه🔰
+!addword [text]
+🔰فیلتر کردن متن🔰
+!badwords
+🔰لیست متن های فیلتر شده🔰
+!rw [text]
+🔰حذف متن از لیست فیلتر ها🔰
+!clearbadwords
+🔰حذف تمامی فیلتر ها🔰
+___________________
+*شما میتوانید از علامت های (!)(/)(#)*
+sudo: @crazyboy10 
+G O O D  L O O K  :|
 ]]
   }
   serialize_to_file(config, './data/config.lua')
