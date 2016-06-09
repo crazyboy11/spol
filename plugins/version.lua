@@ -1,15 +1,15 @@
 do
 
 function run(msg, matches)
-  return [[ SpheroBoT
+  return [[ s p o l BoT
   
  Version: 2.2
   
   more information
   send 
-  !spherobot to chat
+  !s p o l bot to chat
   Developer and manager is 
-  @joker_admin_1
+  @crazyboy10
   TNX to all]]
 end
 
